@@ -1,0 +1,102 @@
+/* تنظیمات کلی */
+.navbar {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+/* تغییر رنگ لینک‌ها در هنگام هاور */
+.navbar a:hover {
+    color: gold;
+}
+
+/* تنظیمات منوهای کشویی */
+.navbar .dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0; /* باز شدن منو از سمت راست */
+    background-color: #fff;
+    min-width: 180px;
+    padding: 0;
+}
+.navbar .dropdown ul li:hover{
+    background-color: gold;
+}
+
+.navbar .dropdown ul li {
+    width: 100%;
+}
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    color: #151515;
+    font-weight: 400;
+}
+/* نمایش منوی کشویی در هنگام هاور */
+.navbar .dropdown:hover > ul {
+    display: block;
+}
+
+.navbar .dropdown ul li a {
+    padding: 10px 20px;
+}
+
+/* تنظیمات برای منوهای کشویی عمیق */
+.navbar .dropdown ul .dropdown ul {
+    right: 100%; /* منوهای عمیق از سمت راست باز می‌شوند */
+    top: 0;
+    display: none;
+}
+
+.navbar .dropdown ul .dropdown:hover > ul {
+    display: block;
+}
+
+/* آیکون باز و بسته شدن در منو */
+.bi-chevron-down {
+    margin-left: -5px;
+    margin-top: 0px;
+    padding: 4px;
+}
+
+.bi-chevron-left {
+    margin-left: -5px;
+    margin-top: 0px;
+    padding: 4px;
+}
+
+/* استایل برای لینک خاص */
+#khane {
+    color: gold;
+}
+.bi-chevron-left{
+    left: 1px;
+    position: absolute;
+    padding-left: 20px;
+}
+.bi-chevron-down{
+    left: 1px;
+    position: absolute;
+}

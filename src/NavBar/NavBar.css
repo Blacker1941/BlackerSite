@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navBack{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.navCont{
+    display: flex;
+    max-width: 95%;
+    font-family: sans-serif;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.navHeader{
+    display: flex;
+}
+.BlackerLogo{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.get-started-btn{
+    color: #fff;
+    border-radius: 4px;
+    padding: 7px 25px 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid #ffc451;
+    margin: 6px;
+    transform: 0.3s;
+}
+.get-started-btn:hover{
+    background-color: #ffc451;
+    color: black;
+    transform: 0.3s;
+}
+.navBack {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+#navBack {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+}

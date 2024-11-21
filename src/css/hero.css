@@ -14,32 +14,26 @@
     font-weight: 700;
     line-height: 64px;
     color: #fff;
-    font-family: "irsans", irsans, sans-serif;
+    font-family: system-ui;
     margin-top: 21%;
 }
 #hero h2{
     color: rgba(255, 255, 255, 0.9);
     margin: 10px 0 0 0;
     font-size: 24px;
-}
-@media (min-width: 1200px) {
-    .col-xl-2 {
-        flex: 0 0 auto;
-        width: 16.6666666667%;
-    }
+    font-family: system-ui;
 }
 @media (min-width: 1024px) {
     #hero {
         background-attachment: fixed;
     }
 }
-@media (min-width: 768px) {
-    .col-md-4 {
+@media (max-width: 2560px) {
+    .col-xl-2 {
         flex: 0 0 auto;
-        width: 33.3333333333%;
+        width: 15%;
     }
 }
-
 #hero .icon-box {
     padding: 30px 20px;
     transition: ease-in-out 0.3s;
@@ -63,6 +57,7 @@
 #hero .icon-box h3 a {
     color: #fff;
     transition: ease-in-out 0.3s;
+    font-family: system-ui;
 }
 #hero .container {
     position: relative;
@@ -74,7 +69,6 @@
 }
 .row>* {
     flex-shrink: 0;
-    width: 15%;
     max-width: 100%;
     padding-right: calc(var(--bs-gutter-x) / 2);
     padding-left: calc(var(--bs-gutter-x) / 2);

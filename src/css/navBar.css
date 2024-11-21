@@ -34,6 +34,7 @@ a{
     border: 2px solid #ffc451;
     margin: 6px;
     transform: 0.3s;
+    font-family: system-ui;
 }
 .get-started-btn:hover{
     background-color: #ffc451;

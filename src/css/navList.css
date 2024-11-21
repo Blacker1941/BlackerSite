@@ -2,7 +2,7 @@
 .navbar {
     display: flex;
     justify-content: center;
-    font-family: Arial, sans-serif;
+    font-family: system-ui;
 }
 
 .navbar ul {
@@ -82,8 +82,8 @@
 }
 
 .bi-chevron-left {
-    margin-left: -5px;
-    margin-top: 0px;
+    margin-left: -7px;
+    margin-top: -2px;
     padding: 4px;
 }
 

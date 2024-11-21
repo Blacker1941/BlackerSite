@@ -1,6 +1,7 @@
 import React from 'react';
-import './NavList.css';
-import { SvgIcon, SvgIcon1 } from '../svg/SvgIcone';
+import '../../css/navList.css';
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+
 
 function NavList() {
   return (
@@ -23,13 +24,13 @@ function NavList() {
         </li>
         <li className="dropdown">
           <a href="#!">
-            <span>لیست کشویی</span> <i className="bi bi-chevron-down"><SvgIcon></SvgIcon></i>
+            <span>لیست کشویی</span> <i className="bi bi-chevron-down"></i>
           </a>
           <ul>
             <li><a href="#!">لیست کشویی 1</a></li>
             <li className="dropdown">
               <a href="#!">
-                <span>لیست کشویی عمیق</span> <i className="bi bi-chevron-left"><SvgIcon1></SvgIcon1></i>
+                <span>لیست کشویی عمیق</span> <i className="bi bi-chevron-left"></i>
               </a>
               <ul>
                 <li><a href="#!">لیست کشویی عمیق 1</a></li>

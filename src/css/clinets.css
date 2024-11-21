@@ -1,0 +1,96 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 116px;
+  height: 41px;
+  object-fit: cover;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 25PX;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+.swiper-slide img:hover {
+  filter: grayscale(0%); /* وقتی موس روی عکس می‌رود، عکس رنگی می‌شود */
+}
+.swiper-wrapper {
+  padding-bottom: 25px;
+  overflow: visible;
+}
+.swiper-horizontal{
+   overflow: hidden;
+   width: 88% !important;
+}
+.SS{
+  padding-left: 81px;
+}
+.swiper-pagination-bullet-active {
+  background: #ffc451 !important;
+
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
+  margin-bottom: 10px;
+}
+
+
+/* همه بکگراند های عکس */
+
+.citrus{
+  background-image: url(../img/logo/citrus.png);
+}
+.lelly{
+  background-image: url(../img/logo/lelly.png);
+}
+.lifeGroups{
+  background-image: url(../img/logo/lifeGroups.png);
+}
+.belmo{
+  background-image: url(../img/logo/belmo.png);
+}
+.Myob{
+  background-image: url(../img/logo/myob.png);
+}
+.grabyo{
+  background-image: url(../img/logo/grabyo.png);
+}
+.oldendoff{
+  background-image: url(../img/logo/oldendoff.png);
+}
+.trustly{
+  background-image: url(../img/logo/trustly.png);
+}

@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,9 +24,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -39,4 +36,10 @@
 body, html {
   overflow-x: hidden;
 }
-
+.spinner-border {
+  --bs-spinner-border-width: 0.20em !important;
+}
+.spinner-grow {
+  --bs-spinner-width: 1rem !important;
+  --bs-spinner-height: 1rem !important;
+}

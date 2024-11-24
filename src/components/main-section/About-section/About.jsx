@@ -1,28 +1,24 @@
 import React from 'react';
 import '../../../css/about.css';
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
+import { Container, Row, Col } from 'react-bootstrap';
 
 function About() {
   return (
-<section id="about" className="about">
-      <div className="container aos-init aos-animate" data-aos="fade-up">
-        <div className="row" id='row'>
-          <div className="col-lg-6 order-1 order-lg-2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+    <section id="about" className="about">
+      <Container className="container aos-init aos-animate" data-aos="fade-up">
+        <Row className="row rowAbout" id='row'>
+          <Col xxl={6} xl={12} md={10}  className="col-lg-6 order-1 order-lg-2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
             <img className="img-fluid" alt=""></img>
-          </div>
-          <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate sirkat" data-aos="fade-right" data-aos-delay="100">
+          </Col>
+          <Col xxl={6} xl={10} md={10}  className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate sirkat" data-aos="fade-right" data-aos-delay="100">
             <h3>شرکت دیجیتال کاسوکا</h3>
             <p className="style_p">
               شرکت دیجیتال مارکتینگ نوآد به عنوان شرکتی پیشرو در صنعت دیجیتال مارکتینگ ایران در تلاش است تا با بهره گیری از دانش فنی روز و ارایه راهکارهای نوین بازاریابی و برندینگ، با پیشرفت کسب و کارهای داخلی نقش مهمی در شکوفایی اقتصادی ایران ایفا نماید و با تثبیت نام نوآد به عنوان تخصصی ترین برند دیجیتال مارکتینگ در ایران و گسترش نام آن در بازارهای جهانی به صادرات خدمات مبتنی بر تکنولوژی های نوین گام بردارد.
-
               نوآد پیشرفت خود در طول یک دهه فعالیت را مرهون شفافیت، انسجام و پایبندی به نتایج پیش بینی شده مشتریان خود می داند.
-
               سرمایه گذاری روی تکنولوژی های نوین، کیفیت و نوآوری، پایبندی به تعهدات، رضایتمندی و وفاداری مشتریان، نیروی انسانی متمرکز و پویا از ارزش های ذاتی نوآد می باشند.
-
               فضای دیجیتال تحول شگرف در ارتباطات و نحوه تعامل مردم با یکدیگر بوجود آورده است. ابزارها و پلتفرم های بوجود آمده در این عصر، قدرت چانه زنی و انتخاب را برای مردم افزایش داده و موجب سهولت در ارزیابی و مقایسه برندها و محصولات مختلف گردیده است.
-
               ما این تغییر نگرش در انتخاب یک برند و محصول را نوعی فرصت برای خود و مشتریانمان به حساب می آوریم. در فضای دیجیتال به راحتی می توان بازار هدف را شناسایی، نیازها، خواسته ها و علایق آنها را کشف و با استفاده از اطلاعاتی که بدست می آید به خلق و توسعه محصولات، برند و تجربیات مناسب که از ادغام تکنولوژی و خلاقیت در کنار متد بازاریابی نوین ناشی میشود، اقدام کرد.
-
               در نوآد ما آماده پذیرفتن چالش های جدید هستیم و با هر قیمت که شده به تعهدات خود پایبند می مانیم.
             </p>
             <ul>
@@ -33,10 +29,9 @@ function About() {
             <p className='pKhedmat'>
               خدمات نوآد در جهت یکپارچه سازی تمامی فعالیت های یک کسب و کار از مرحله ورود به بازار، ساخت، گسترش و ایجاد تصویری یکپاچه از برند، دیجیتال مارکتینگ، افزایش مزیت رقابتی و سهم بازار تا مراحل پس از فروش و ایجاد وفاداری در مشتریان یک برند ارایه می گردد.
             </p>
-          </div>
-        </div>
-
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }

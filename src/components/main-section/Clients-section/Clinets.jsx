@@ -3,38 +3,45 @@ import '../../../css/clinets.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
+
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
-import { Pagination } from 'swiper/modules';
+import { Pagination , Autoplay} from 'swiper/modules';
 
 function Clients() {
   return (
     <section className='clients'>
     <Swiper
-      slidesPerView={1}
-      spaceBetween={10}
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      breakpoints={{
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 6,
-          spaceBetween: 50,
-        },
-      }}
-      modules={[Pagination]}
-      className="mySwiper"
-    >
+  slidesPerView={1}
+  spaceBetween={10}
+  loop={true}
+  loopAdditionalSlides={2}
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+  }}
+  pagination={{
+    clickable: true,
+  }}
+  breakpoints={{
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 50,
+    },
+  }}
+  modules={[Pagination, Autoplay]}
+  className="mySwiper"
+>
       <SwiperSlide className='swiperSlider' id='SS'><img className='citrus'/></SwiperSlide>
       <SwiperSlide className='swiperSlider'><img className='lelly'/></SwiperSlide>
       <SwiperSlide className='swiperSlider'><img className='lifeGroups'/></SwiperSlide>

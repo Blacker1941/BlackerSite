@@ -1,51 +1,63 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './css/app.css';
-import NavBar from './components/NavBar/NavBar';
-import Hero from './components/secHero/Hero';
-import About from './components/main/about/About';
-import Clinets from './components/main/clients/Clinets';
-import {Col} from 'react-bootstrap'
+import NavBar from './components/navBar-section/NavBar';
+import Hero from './components/hero-section/Hero';
+import About from './components/main-section/About-section/About';
+import Clinets from './components/main-section/Clients-section/Clinets';
+import Features from './components/main-section/features-secthion/Features';
+import {Container,Row,Col} from 'react-bootstrap';
+import Services from './components/main-section/services-section/Services';
+import Spinner from 'react-bootstrap/Spinner';
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false); // حالت برای مدیریت نمایش محتوای لود شده
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // تنظیم حالت بعد از لود کامل صفحه
     const handleLoad = () => setIsLoaded(true);
 
-    // بررسی اینکه آیا صفحه از قبل لود شده است
     if (document.readyState === 'complete') {
       handleLoad();
     } else {
       window.addEventListener('load', handleLoad);
     }
 
-    // پاکسازی رویداد
     return () => window.removeEventListener('load', handleLoad);
   }, []);
 
   return (
     <div className="App">
       {!isLoaded ? (
-        // صفحه لودینگ اولیه
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            loading
-          </p>
+          <Spinner animation="border" variant="warning" />
+          <p>loading <Spinner animation="grow" /> <Spinner animation="grow" /> <Spinner animation="grow" /></p>
         </header>
       ) : (
-        // محتوای اصلی که بعد از لود شدن نمایش داده می‌شود
         <div className="loading-screen">
-          <Col xs={12}>
-          <NavBar></NavBar>
-          <Hero></Hero>
+          <NavBar />
+          <Hero />
           <main>
-            <About></About>
-            <Clinets></Clinets>
+            <Container>
+              <Row>
+                <Col xs={12} >
+                  <About />
+                </Col>
+                <Col xs={12}>
+                  <Clinets />
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={12}>
+                  <Features />
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={12}>
+                  <Services />
+                </Col>
+              </Row>
+            </Container>
           </main>
-          </Col>
         </div>
       )}
     </div>

@@ -66,6 +66,9 @@ body {
 .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
   margin-bottom: 10px;
 }
+.clients{
+  padding-bottom: 0;
+}
 
 
 /* همه بکگراند های عکس */

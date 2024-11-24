@@ -2,6 +2,7 @@ import React from 'react';
 import '../../css/navBar.css';
 import NavList from './NavList';
 
+
 function NavBar() {
   return (
     <div className="navBack">

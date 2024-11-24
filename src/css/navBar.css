@@ -21,7 +21,7 @@
     color: white;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .get-started-btn{
     color: #fff;
@@ -35,6 +35,8 @@ a{
     margin: 6px;
     transform: 0.3s;
     font-family: system-ui;
+    height: 100%;
+    margin-top: 1%;
 }
 .get-started-btn:hover{
     background-color: #ffc451;

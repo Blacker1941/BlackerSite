@@ -19,7 +19,7 @@ img {
 .img-fluid{
     background-image: url(../img/about.jpg);
     width: 636px;
-    height: 477px;
+    height: 477px !important;
     background-size: cover;
     position: relative;
 }
@@ -64,6 +64,21 @@ dl, ol, ul {
         max-width: 1320px;
     }
 }
+@media (max-width: 1440px) {
+    .sirkat {
+        flex: 0 0 auto;
+        width: 33%;
+    }
+}
+@media (max-width: 968px) {
+    .sirkat {
+        flex: 0 0 auto;
+        width: 88%;
+    }
+    .rowAbout{
+        flex-wrap: wrap !important;
+    }
+}
 .row{
     display: flex;
     font-weight: bold;
@@ -84,7 +99,11 @@ dl, ol, ul {
 }
 #row{
     display: flex;
-    font-weight: bold;
-    flex-direction: row;
-
+        font-weight: bold;
+        flex-wrap: nowrap;
+}
+@media (max-width: 557px) {
+    .img-fluid{
+        height: 283px !important;
+    }
 }

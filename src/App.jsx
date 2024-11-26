@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './css/app.css';
-import NavBar from './components/navBar-section/NavBar';
-import Hero from './components/hero-section/Hero';
+import NavBar from './components/NavBar-section/NavBar';
+import Hero from './components/Hero-section/Hero';
 import About from './components/main-section/About-section/About';
 import Clinets from './components/main-section/Clients-section/Clinets';
-import Features from './components/main-section/features-secthion/Features';
+import Features from './components/main-section/Features-secthion/Features';
 import {Container,Row,Col} from 'react-bootstrap';
-import Services from './components/main-section/services-section/Services';
+import Services from './components/main-section/Services-section/Services';
 import Spinner from 'react-bootstrap/Spinner';
+import Cta from './components/main-section/Cta-section/Cta';
+import Portfolio from './components/main-section/portfolio-sectiom/portfolio';
+import Counts from './components/main-section/Counts-section/counts';
+
+
+
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -54,6 +59,21 @@ function App() {
               <Row>
                 <Col xs={12}>
                   <Services />
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={12}>
+                  <Cta />
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={12}>
+                  <Portfolio />
+                </Col>
+              </Row>
+              <Row>
+                <Col xs={12}>
+                  <Counts />
                 </Col>
               </Row>
             </Container>

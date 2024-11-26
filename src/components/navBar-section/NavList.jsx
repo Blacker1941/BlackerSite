@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../css/navList.css';
-<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
 
 
 function NavList() {
@@ -8,7 +7,7 @@ function NavList() {
     <nav id="navbar" className="navbar order-last order-lg-0">
       <ul>
         <li>
-          <a className="nav-link scrollto active" id='khane' href="#hero">خانه</a>
+          <a className="nav-link scrollto active" href="#hero">خانه</a>
         </li>
         <li>
           <a className="nav-link scrollto" href="#about">درباره‌ی ما</a>

@@ -17,7 +17,7 @@ img {
     vertical-align: middle;
 }
 .img-fluid{
-    background-image: url(../img/about.jpg);
+    background-image: url(../../public/img/about.jpg);
     width: 636px;
     height: 477px !important;
     background-size: cover;
@@ -26,7 +26,7 @@ img {
 .about .content h3 {
     font-weight: 700;
     font-size: 28px;
-    font-family: "irsans", irsans, sans-serif;
+    font-family: 'Vazirmatn', sans-serif;
 }
 .style_p {
     text-align: justify;
@@ -53,7 +53,6 @@ dl, ol, ul {
     font-size: 18px;
     text-align: right;
     display: flex;
-    flex-direction: row-reverse;
 }
 @media (min-width: 992px) {
     .sirkat {
@@ -79,15 +78,13 @@ dl, ol, ul {
         flex-wrap: wrap !important;
     }
 }
-.row{
-    display: flex;
-    font-weight: bold;
-}
+
 .sirkat{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     font-weight: bold;
+    flex-direction: row-reverse;
 }
 .pKhedmat{
     font-size: 18px;
@@ -97,11 +94,7 @@ dl, ol, ul {
     color: #ffc451;
     margin-left: 5px;
 }
-#row{
-    display: flex;
-        font-weight: bold;
-        flex-wrap: nowrap;
-}
+
 @media (max-width: 557px) {
     .img-fluid{
         height: 283px !important;

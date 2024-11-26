@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     font-family: system-ui;
+
+    direction: ltr;
 }
 
 .navbar ul {
@@ -88,8 +90,8 @@
 }
 
 /* استایل برای لینک خاص */
-#khane {
-    color: gold;
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #ffc451;
 }
 .bi-chevron-left{
     left: 1px;

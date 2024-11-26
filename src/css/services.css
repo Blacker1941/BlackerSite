@@ -6,7 +6,8 @@
     margin: 0 0 5px 0;
     text-transform: uppercase;
     color: #aaaaaa;
-    font-family: "irsans", irsans, sans-serif;
+    font-family: 'Vazirmatn', sans-serif;
+    display: flex;
 }
 .section-title p {
     margin: 0;
@@ -14,11 +15,56 @@
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: "irsans", irsans, sans-serif;
+    font-family: 'Vazirmatn', sans-serif;
     color: #151515;
     text-align: justify;
+    display: flex;
 }
-hr{
+
+.section-title {
+    padding-bottom: 40px;
+}
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #ffc451;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.services .icon-box .icon i {
+    color: #151515;
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .icon-box {
+    text-align: center;
+    border: 1px solid #ebebeb;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+}
+.services .icon-box h4 a {
+    color: #151515;
+    transition: ease-in-out 0.3s;
+}
+.margin-top-24 {
+    margin-top: 24px;
+}
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: right;
+}
+.section-title h2::after {
     content: "";
     width: 120px;
     height: 1px;
@@ -26,7 +72,8 @@ hr{
     background: #ffde9e;
     margin: 4px 10px;
 }
-.section-title{
-    display: flex;
-    flex-direction: row-reverse;
+.services .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
 }

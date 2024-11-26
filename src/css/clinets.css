@@ -74,26 +74,26 @@ body {
 /* همه بکگراند های عکس */
 
 .citrus{
-  background-image: url(../img/logo/citrus.png);
+  background-image: url(../../public/img/logo/citrus.png);
 }
 .lelly{
-  background-image: url(../img/logo/lelly.png);
+  background-image: url(../../public/img/logo/lelly.png);
 }
 .lifeGroups{
-  background-image: url(../img/logo/lifeGroups.png);
+  background-image: url(../../public/img/logo/lifeGroups.png);
 }
 .belmo{
-  background-image: url(../img/logo/belmo.png);
+  background-image: url(../../public/img/logo/belmo.png);
 }
 .Myob{
-  background-image: url(../img/logo/myob.png);
+  background-image: url(../../public/img/logo/myob.png);
 }
 .grabyo{
-  background-image: url(../img/logo/grabyo.png);
+  background-image: url(../../public/img/logo/grabyo.png);
 }
 .oldendoff{
-  background-image: url(../img/logo/oldendoff.png);
+  background-image: url(../../public/img/logo/oldendoff.png);
 }
 .trustly{
-  background-image: url(../img/logo/trustly.png);
+  background-image: url(../../public/img/logo/trustly.png);
 }

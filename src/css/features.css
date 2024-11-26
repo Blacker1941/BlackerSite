@@ -1,5 +1,5 @@
 .divImage{
-    background-image: url(../img/features.jpg);
+    background-image: url(../../public/img/features.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,5 +33,5 @@
     margin-top: 26px;
 }
 .features{
-    padding-top: 0;
+    padding-top: 3%;
 }

@@ -1,3 +1,8 @@
+@charset "UTF-8";
+
+
+
+
 .App {
   text-align: center;
 }
@@ -42,4 +47,22 @@ body, html {
 .spinner-grow {
   --bs-spinner-width: 1rem !important;
   --bs-spinner-height: 1rem !important;
+}
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  color: #444444;
+  direction: rtl;
+}
+a {
+  color: #ffc451;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd584;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Vazirmatn', sans-serif;
 }

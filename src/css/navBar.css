@@ -13,9 +13,11 @@
     margin: 0 auto;
     justify-content: space-between;
     font-weight: bold;
+    flex-direction: row-reverse;
 }
 .navHeader{
     display: flex;
+    align-items: flex-end;
 }
 .BlackerLogo{
     color: white;
